@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,500&family=Roboto+Slab&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background: url(./dibujos/colores-vibrantes-5313.webp);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+    
+}
+
+
+
+.titulo{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+.subtitulos{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+#seleccionar-mascota {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjera-de-mokepon{
+    color: white;
+    width: 159px;
+    height: 100px;
+    background: #b42cff;
+    padding: 9px;
+    box-sizing: border-box;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjera-de-mokepon-uniponio {
+    color: white;
+    width: 165px;
+    height: 100px;
+    background: #b42cff;
+    padding: 9px;
+    box-sizing: border-box;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjera-de-mokepon-uniponio img{
+    width: 73px;
+    height: 60px;
+
+}
+.tarjera-de-mokepon img{
+    
+    width: 73px;
+    height: 60px;
+}
+
+input{
+   display: none; 
+}
+
+input:checked + label {
+    background-color: #290035;
+     
+}
+
+#boton-mascota{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 205px;
+    height: 35px;
+    background: #b42cff;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 35px
+   
+}
+
+#seleccionar-ataque{
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton, .boton-ataques{
+    color: white;
+    background: #b42cff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: black;
+    width: 110px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes{
+ width: 215px;
+ background: #b42cff;
+ padding: 6px;
+ margin-top: 20px;
+ border-radius: 20px;
+ color: white;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+#boton-reiniciar{
+    border: #b42cff;
+    color: black;
+    background-color: #b42cff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 130px 130px;
+    color: white;
+    white-space: pre;
+}
+
+.ataque-jugador, .ataque-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ver-Mapa{
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-Mapa button{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100px;
+    height: 35px;
+    background: #b42cff;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 3px solid black;
+    border-radius: 35px
+
+   
+}
+
+
+@media (max-width: 560px ){
+
+    .tarjetas,   .tarjetas-ataques {
+
+     flex-direction: column;
+    }
+
+ 
+}
+
+@media (max-width: 300px ){
+
+    #ver-Mapa div {
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+ 
+}
+
